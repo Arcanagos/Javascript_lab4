@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .note {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            float: left;
+        }
+        .colorOption
+            {
+            
+        }
+    </style>
+</head>
+    <body>
+        <script src="Notatnik.js"></script>
+
+        <label>Tytuł:</label>
+        <input type="text" id="noteTitle">
+
+        <label>Treść:</label>
+        <textarea id="noteContent"></textarea>
+
+        <label>Kolor:</label>
+        <div id="Colors"
+            <div class="colorOption" onclick="selectColor('yellow')" background-color="#fcf3cf" ></div>
+            <div class="colorOption" onclick="selectColor('blue')" background-color="#d6eaf8"></div>
+            <div class="colorOption" onclick="selectColor('green')" background-color="#d4efdf"></div>
+        </div>
+
+        <label>Przypnij na początku:</label>
+        <input type="checkbox" id="pinCheckbox">
+
+        <h1>Notatnik</h1>
+        <button onclick="addNote()">Dodaj notatkę</button>
+
+        <div id="noteStorage">
+        </div>
+    </body>
+</html>
